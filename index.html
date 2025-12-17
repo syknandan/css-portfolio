@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day CSS Learning Journey</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="container">
+                <a href="#" class="logo">CSS<span>7Days</span></a>
+                <ul class="nav-links">
+                    <li><a href="#day1">Day 1</a></li>
+                    <li><a href="#day2">Day 2</a></li>
+                    <li><a href="#day3">Day 3</a></li>
+                    <li><a href="#day4">Day 4</a></li>
+                    <li><a href="#day5">Day 5</a></li>
+                    <li><a href="#day6">Day 6</a></li>
+                    <li><a href="#day7">Day 7</a></li>
+                </ul>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1>7-Day CSS Learning Journey</h1>
+                <p>Master CSS fundamentals one day at a time</p>
+                <a href="#day1" class="btn-primary">Start Learning</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Day 1: Setup & Reset -->
+        <section id="day1" class="day-section">
+            <div class="section-header">
+                <span class="day-badge">Day 1</span>
+                <h2>CSS Setup & Reset</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>On the first day, we set up our CSS file, link it to HTML, and reset default browser styles to ensure consistency across all browsers.</p>
+                    <h3>Key Concepts:</h3>
+                    <ul>
+                        <li>Linking CSS to HTML using <code>&lt;link&gt;</code> tag</li>
+                        <li>Creating a CSS reset to remove default margins and paddings</li>
+                        <li>Using universal selector for basic reset</li>
+                        <li>Setting up box-sizing: border-box for consistent sizing</li>
+                    </ul>
+                </div>
+                <div class="content-demo">
+                    <div class="reset-demo">
+                        <p class="demo-text">This text has reset styles applied</p>
+                        <div class="demo-box">Box with border-box sizing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 2: Typography & Colors -->
+        <section id="day2" class="day-section">
+            <div class="section-header">
+                <span class="day-badge">Day 2</span>
+                <h2>Typography & Colors</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>Day 2 focuses on styling text, implementing Google Fonts, and creating a consistent color scheme throughout the website.</p>
+                    <h3>Our Color Scheme:</h3>
+                    <div class="color-swatches">
+                        <div class="swatch primary">
+                            <span>Primary</span>
+                            <span>#4A6FA5</span>
+                        </div>
+                        <div class="swatch secondary">
+                            <span>Secondary</span>
+                            <span>#166088</span>
+                        </div>
+                        <div class="swatch accent">
+                            <span>Accent</span>
+                            <span>#DB5461</span>
+                        </div>
+                        <div class="swatch dark">
+                            <span>Dark</span>
+                            <span>#1E1E24</span>
+                        </div>
+                    </div>
+                    <h3>Typography Examples:</h3>
+                    <p class="font-demo montserrat">Montserrat: Heading Font</p>
+                    <p class="font-demo opensans">Open Sans: Body Font</p>
+                </div>
+                <div class="content-demo">
+                    <div class="typography-demo">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <p>This is a paragraph demonstrating body text styling with proper line height and color contrast for readability.</p>
+                        <blockquote>
+                            This is a blockquote showing how to style quoted text differently from regular paragraphs.
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 3: Layout & Spacing -->
+        <section id="day3" class="day-section">
+            <div class="section-header">
+                <span class="day-badge">Day 3</span>
+                <h2>Layout & Spacing</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>Day 3 introduces layout techniques using Flexbox and Grid, and the proper use of margins and padding for spacing elements.</p>
+                    <h3>Flexbox Example:</h3>
+                    <p>Flexbox is ideal for one-dimensional layouts (rows or columns).</p>
+                    <h3>CSS Grid Example:</h3>
+                    <p>CSS Grid is perfect for two-dimensional layouts (rows and columns).</p>
+                </div>
+                <div class="content-demo">
+                    <div class="layout-demo">
+                        <h4>Flexbox Container</h4>
+                        <div class="flex-container">
+                            <div class="flex-item">Item 1</div>
+                            <div class="flex-item">Item 2</div>
+                            <div class="flex-item">Item 3</div>
+                        </div>
+                        
+                        <h4>CSS Grid Container</h4>
+                        <div class="grid-container">
+                            <div class="grid-item">Grid Item 1</div>
+                            <div class="grid-item">Grid Item 2</div>
+                            <div class="grid-item">Grid Item 3</div>
+                            <div class="grid-item">Grid Item 4</div>
+                            <div class="grid-item">Grid Item 5</div>
+                            <div class="grid-item">Grid Item 6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 4: Interactive Elements -->
+        <section id="day4" class="day-section">
+            <div class="section-header">
+                <span class="day-badge">Day 4</span>
+                <h2>Interactive Elements</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>On Day 4, we add hover effects, transitions, and animations to make the website more interactive and engaging for users.</p>
+                    <h3>Animation Types:</h3>
+                    <ul>
+                        <li><strong>Transitions:</strong> Smooth property changes over time</li>
+                        <li><strong>Transformations:</strong> Scale, rotate, translate elements</li>
+                        <li><strong>Keyframe Animations:</strong> Complex multi-step animations</li>
+                    </ul>
+                </div>
+                <div class="content-demo">
+                    <div class="interactive-demo">
+                        <h4>Hover Effects</h4>
+                        <button class="btn-hover">Hover Over Me</button>
+                        <div class="animated-card">
+                            <i class="fas fa-star"></i>
+                            <p>Animated Card</p>
+                        </div>
+                        
+                        <h4>Transformations</h4>
+                        <div class="transform-container">
+                            <div class="transform-box scale">Scale</div>
+                            <div class="transform-box rotate">Rotate</div>
+                            <div class="transform-box translate">Translate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 5: Responsive Design -->
+        <section id="day5" class="day-section">
+            <div class="section-header">
+                <span class="day-badge">Day 5</span>
+                <h2>Responsive Design</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>Day 5 focuses on implementing responsive design using media queries to ensure the website looks great on all devices from mobile to desktop.</p>
+                    <h3>Breakpoints:</h3>
+                    <ul>
+                        <li><strong>Mobile:</strong> &lt; 768px</li>
+                        <li><strong>Tablet:</strong> 768px - 1024px</li>
+                        <li><strong>Desktop:</strong> &gt; 1024px</li>
+                    </ul>
+                    <p>Resize your browser window to see the responsive layout in action!</p>
+                </div>
+                <div class="content-demo">
+                    <div class="responsive-demo">
+                        <div class="device-indicator">
+                            <span class="device mobile">
+                                <i class="fas fa-mobile-alt"></i> Mobile
+                            </span>
+                            <span class="device tablet">
+                                <i class="fas fa-tablet-alt"></i> Tablet
+                            </span>
+                            <span class="device desktop">
+                                <i class="fas fa-desktop"></i> Desktop
+                            </span>
+                        </div>
+                        <div class="responsive-boxes">
+                            <div class="responsive-box">Box 1</div>
+                            <div class="responsive-box">Box 2</div>
+                            <div class="responsive-box">Box 3</div>
+                        </div>
+                        <p class="viewport-info">Viewport Width: <span id="viewport-width">0</span>px</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 6: Advanced Styling -->
+        <section id="day6" class="day-section">
+            <div class="section-header">
+                <span class="day-badge">Day 6</span>
+                <h2>Advanced Styling</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>On Day 6, we explore advanced styling techniques for forms, images, and custom components to create a polished user interface.</p>
+                    <h3>Components to Style:</h3>
+                    <ul>
+                        <li>Forms with validation states</li>
+                        <li>Images with overlays and effects</li>
+                        <li>Custom cards and modals</li>
+                        <li>Dropdown menus and tooltips</li>
+                    </ul>
+                </div>
+                <div class="content-demo">
+                    <div class="advanced-demo">
+                        <h4>Styled Form</h4>
+                        <form class="styled-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="3" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Submit</button>
+                        </form>
+                        
+                        <h4>Image Card</h4>
+                        <div class="image-card">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Sample profile">
+                                <div class="image-overlay">
+                                    <p>Profile Image</p>
+                                </div>
+                            </div>
+                            <div class="image-card-content">
+                                <h5>John Doe</h5>
+                                <p>Web Developer & Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 7: Optimization & Testing -->
+        <section id="day7" class="day-section">
+            <div class="section-header">
+                <span class="day-badge">Day 7</span>
+                <h2>Optimization & Testing</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>On the final day, we test our website across different browsers and optimize CSS for performance, including minification and organization.</p>
+                    <h3>Testing Checklist:</h3>
+                    <ul>
+                        <li>Cross-browser compatibility</li>
+                        <li>CSS specificity and organization</li>
+                        <li>Performance optimization</li>
+                        <li>Accessibility testing</li>
+                        <li>Responsiveness testing</li>
+                    </ul>
+                    <h3>Browser Support:</h3>
+                    <div class="browser-icons">
+                        <i class="fab fa-chrome" title="Chrome"></i>
+                        <i class="fab fa-firefox" title="Firefox"></i>
+                        <i class="fab fa-safari" title="Safari"></i>
+                        <i class="fab fa-edge" title="Edge"></i>
+                        <i class="fab fa-opera" title="Opera"></i>
+                    </div>
+                </div>
+                <div class="content-demo">
+                    <div class="optimization-demo">
+                        <h4>Performance Tips</h4>
+                        <div class="tip-card">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h5>Minify CSS</h5>
+                            <p>Remove whitespace and comments for production</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-layer-group"></i>
+                            <h5>Organize Code</h5>
+                            <p>Use consistent naming and logical structure</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-universal-access"></i>
+                            <h5>Accessibility</h5>
+                            <p>Ensure proper contrast and keyboard navigation</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h5>Mobile First</h5>
+                            <p>Design for mobile then enhance for larger screens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>7-Day CSS Journey</h3>
+                    <p>Master CSS in one week through structured learning</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#day1">Day 1: Setup</a></li>
+                        <li><a href="#day2">Day 2: Typography</a></li>
+                        <li><a href="#day3">Day 3: Layout</a></li>
+                        <li><a href="#day4">Day 4: Interactive</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Practice More</h4>
+                    <p>Try replicating this page or create your own 7-day learning plan!</p>
+                    <a href="#" class="btn-secondary">Back to Top</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CSS Learning Project. Created for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactive elements -->
+    <script>
+        // Update viewport width for Day 5 demo
+        function updateViewportWidth() {
+            const width = window.innerWidth;
+            document.getElementById('viewport-width').textContent = width;
+        }
+        
+        // Update on load and resize
+        window.addEventListener('load', updateViewportWidth);
+        window.addEventListener('resize', updateViewportWidth);
+        
+        // Simple mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+        
+        // Form submission prevention for demo
+        document.querySelector('.styled-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted! This is a demo, so no data was sent.');
+        });
+    </script>
+</body>
+</html>
